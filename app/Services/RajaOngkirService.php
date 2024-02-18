@@ -11,11 +11,11 @@ class RajaOngkirService
     protected $baseUrl;
     protected $apiKey;
 
-    public function __construct($httpClient)
+    public function __construct(Http $httpClient)
     {
         $this->httpClient = $httpClient;
         $this->baseUrl = env('API_URL_RAJAONGKIR', 'https://api.rajaongkir.com/starter/');
-        $this->apiKey = env('API_KEY_RAJAONGKIR', '0df6d5bf733214af6c6644eb8717c92c');
+        $this->apiKey = env('API_KEY_RAJAONGKIR', '0870ebf7f50278fc17cba66a42fb4e0e');
     }
 
     public function getProvince($id = null)
